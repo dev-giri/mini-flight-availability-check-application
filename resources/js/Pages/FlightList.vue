@@ -85,7 +85,7 @@
                             <td class="px-4 py-2 text-sm text-gray-800">{{ flight.takeoff_location }}</td>
                             <td class="px-4 py-2 text-sm text-gray-800">{{ flight.landing_location }}</td>
                             <td class="px-4 py-2 text-sm text-gray-800">
-                                <span v-for="(day, index) in flight.operating_days" :key="index" class="inline-block mr-2">
+                                <span v-for="(day, index) in JSON.parse(flight.operating_days)" :key="index" class="inline-block mr-2">
                                   {{ day }}
                                 </span>
                             </td>
